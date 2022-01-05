@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap');
+
+body {
+  margin: 0;
+  background-color: rgb(240, 240, 240);
+  overflow-x: hidden;
+  font-family: 'Spline Sans', sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0 2rem 0;
+}
+
+section * {
+  margin: 0 auto;
+  border: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

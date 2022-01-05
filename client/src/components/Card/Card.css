@@ -1,0 +1,28 @@
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 1rem 0;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cardDescription div {
+  text-align: left;
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+.projectContext {
+}
+.projectDescription {
+}
+.projectStack {
+}
+.cardImage {
+  width: 30%;
+  margin: 1rem;
+}

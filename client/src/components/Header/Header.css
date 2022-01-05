@@ -1,0 +1,63 @@
+.HeroContainer {
+  margin: 0 auto;
+  background-color: rgb(40, 40, 40);
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: white;
+}
+
+.HeroText {
+  margin: auto 0;
+  margin-right: 3rem;
+}
+
+.HeroImage {
+  padding: 8em;
+  margin: auto 0;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(../../../public/img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+h1:nth-of-type(1) {
+  animation: fadeInUp 1s 0.3s forwards;
+  opacity: 0;
+}
+
+h1:nth-of-type(2) {
+  animation: fadeInUp 1s 0.8s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .HeroContainer {
+    flex-direction: column;
+  }
+
+  .HeroText {
+    order: 2;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .HeroImage {
+    margin: 0 auto;
+  }
+}
